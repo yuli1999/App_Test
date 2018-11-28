@@ -4,15 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/a9"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/img"
         android:layout_width="80dp"
-        android:layout_height="80dp" />
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/a001" />
 
+    <EditText
+        android:id="@+id/ed_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ed_bj"
+        android:hint="手机号"
+        android:padding="10dp" />
 
+    <EditText
+        android:id="@+id/ed_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_mobile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ed_bj"
+        android:hint="密码"
+        android:padding="10dp" />
 
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_pass"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bt_bj"
+        android:text="登录"
+        android:textColor="#f5d8d8"
+        android:textSize="20dp" />
 
+    <Button
+        android:id="@+id/bt_registered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_bj"
+        android:text="注册"
+        android:textColor="#f5d8d8"
+        android:textSize="20dp" />
 
 
 </RelativeLayout>
